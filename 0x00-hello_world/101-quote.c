@@ -2,12 +2,11 @@
 #include <unistd.h>
 /**
  * main - entry point
- * @void: no arguments
  * Description: the program starts and ends here.
- * Return: value 0 to exit
+ * Return: value 1 on success
  */
 int main(void)
 {
 write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 58);
-return (0);
+return (1);
 }
