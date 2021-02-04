@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-int n;
-for (n = 0; n < 10; n++)
+int num, i;
+for (num = 48, i = 0; i < 10; num++, i++)
 {
-putchar(n);
+putchar(num);
 }
 putchar(10);
 return (0);
