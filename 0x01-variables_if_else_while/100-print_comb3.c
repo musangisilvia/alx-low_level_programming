@@ -30,7 +30,7 @@ putchar(',');
 putchar(' ');
 }
 }
- k++;
+k++;
 }
 putchar('\n');
 return (0);
