@@ -15,7 +15,8 @@ for (k = '0'; k <= '9'; k++)
 {
 for (l = '1'; l <= '9'; l++)
 {
-if ((n < k && m > l) || (n < k && m == l) || (n < k && m <= l) || (n == k && m < l))
+if ((n < k && m > l) || (n < k && m == l)
+|| (n < k && m <= l) || (n == k && m < l))
 {
 putchar(n);
 putchar(m);
