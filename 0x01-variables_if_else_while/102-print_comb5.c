@@ -6,24 +6,19 @@
  */
 int main(void)
 {
-int n, k, l, m;
-for (n = '0'; n <= '9'; n++)
+int n, m;
+for (n = 0; n < 100; n++)
 {
-for (m = '0'; m <= '9'; m++)
+for (m = 1; m < 100; m++)
 {
-for (k = '0'; k <= '9'; k++)
+if (n < m)
 {
-for (l = '1'; l <= '9'; l++)
-{
-if ((n < k && m > l) || (n < k && m == l)
-|| (n < k && m <= l) || (n == k && m < l))
-{
-putchar(n);
-putchar(m);
+putchar((n / 10) + '0');
+putchar((n % 10) + '0');
 putchar(' ');
-putchar(k);
-putchar(l);
-if (n == '9' && m == '8' && k == '9' && l == '9')
+putchar((m / 10) + '0');
+putchar((m % 10) + '0');
+if (n == 98  && m == 99)
 {
 break;
 }
@@ -35,8 +30,6 @@ putchar(' ');
 }
 }
 }
-}
-}
-putchar('\n');
+putchar(10);
 return (0);
 }
