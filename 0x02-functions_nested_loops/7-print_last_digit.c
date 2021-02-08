@@ -11,13 +11,11 @@ int lastDig;
 if (n >= 0)
 {
 lastDig = n % 10;
-_putchar(lastDig + '0');
 }
-if (n < 0)
+else
 {
-n = n * -1;
-lastDig = n % 10;
-_putchar('0' + lastDig);
+lastDig = (n % 10) * -1;
 }
+_putchar('0' + lastDig);
 return (lastDig);
 }
