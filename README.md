@@ -8,4 +8,10 @@
 
 ## 0x01-variables_if_else_while
 - Controll structures in c
-- loops in c
+- loops in c.
+
+## 0x02-functions_nested_loops
+- Nested loops
+- Functions : ``` declaration ``` , ``` definition ```.
+- Function prototypes.
+- Scope of variables.
