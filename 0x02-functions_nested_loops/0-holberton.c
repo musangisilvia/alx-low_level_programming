@@ -6,25 +6,12 @@
  */
 int main(void)
 {
-char h, o, l, b, e, r, t, n, nl;
-h = 'H';
-o = 'o';
-l = 'l';
-b = 'b';
-e = 'e';
-r = 'r';
-t = 't';
-n = 'n';
-nl = '\n';
-_putchar(h);
-_putchar(o);
-_putchar(l);
-_putchar(b);
-_putchar(e);
-_putchar(r);
-_putchar(t);
-_putchar(o);
-_putchar(n);
-_putchar(nl);
+char text[9] = "Holberton";
+int i;
+for (i = 0; i < 9; i++)
+{
+_putchar(text[i]);
+}
+putchar('\n');
 return (0);
 }
