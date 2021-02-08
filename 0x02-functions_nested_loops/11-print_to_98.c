@@ -16,7 +16,7 @@ printf("%d\n", n);
 else if (n < 98)
 {
 int j;
-for( j = n; j < 99; j++)
+for (j = n; j < 99; j++)
 {
 if (j == 98)
 {
@@ -30,7 +30,7 @@ printf("%d, ", j);
 }
 else if (n > 98)
 {
-int j ;
+int j;
 for (j = n; j > 97; j--)
 {
 if (j == 98)
