@@ -22,7 +22,7 @@ if (n < 0)
 {
 n = n * -1;
 lastDig = n % 10;
-_putchar('0' + lastDig);
+_putchar(lastDig);
 }
 return (lastDig);
 }
