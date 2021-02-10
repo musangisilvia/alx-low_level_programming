@@ -10,13 +10,15 @@ int main(void)
 
 	for (i = 0; i < 49; i++)
 	{
+		if ((y % 2 == 0) && (y <= 4000000))
+		{
+			printf("%ld, ", y);
+			tSum = tSum + y;
+		}
 		sum = x + y;
 		x = y;
 		y = sum;
-		if ((y % 2 == 0) && (y <= 4000000))
-		{
-			tSum = tSum + y;
-		}
+
 	}
 	printf("%ld\n", tSum);
 	return (0);
