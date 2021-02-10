@@ -17,4 +17,5 @@
 - Scope of variables.
 
 ## 0x03-debugging
-- Rubber duck debugging.
+``` Debugging ```
+> Finding and resolving bugs.
