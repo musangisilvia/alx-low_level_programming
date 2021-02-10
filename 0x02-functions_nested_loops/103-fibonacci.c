@@ -12,7 +12,6 @@ int main(void)
 	{
 		if ((y % 2 == 0) && (y <= 4000000))
 		{
-			printf("%ld, ", y);
 			tSum = tSum + y;
 		}
 		sum = x + y;
