@@ -26,9 +26,9 @@ int main(void)
 		{
 			printf("%d ", i);
 		}
-		if (i == 100)
+		if (i == 99)
 		{
-			printf("\n");
+			printf("Buzz\n");
 		}
 	}
 	return (0);
