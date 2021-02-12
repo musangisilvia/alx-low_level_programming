@@ -60,7 +60,7 @@
 
 ## 10-print_triangle.c
 > A function that prints a triangle, followed by a new line.
-> - Prototype: ``` void print_triangle(int size); ``` void print_triangle(int size); ``` 
+> - Prototype: ``` void print_triangle(int size); ```
 
 ``` ADVANCED ```
 
