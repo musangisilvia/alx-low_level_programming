@@ -18,4 +18,13 @@
 
 ## 0x03-debugging
 ``` Debugging ```
-> Finding and resolving bugs.
+- Finding and resolving bugs.
+
+## 0x04-more_functions_nested_loops
+- Nested loops
+- Functions and prototypes.
+
+## 0x05-pointers_arrays_strings
+- Pointers
+- Arrays
+- Strings
