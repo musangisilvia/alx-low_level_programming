@@ -8,22 +8,27 @@
 char *rot13(char *s)
 {
 	int stringCount, rotation;
-	char r1[] = "ABCDEFGHIJKLMN0PQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char r2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char r1[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+		     'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+		     'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+		     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+		     'Z'};
+	char r2[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+		     'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+		     'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+		     'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+		     'M'};
 
-	stringCount = 0;
-	while (s[stringCount] != '\0')
+	for (stringCount = 0; s[stringCount] != '\0'; stringCount++)
 	{
-		rotation = 0;
-		while (rotation < 52)
+		for (rotation = 0; rotation < 53; rotation++)
 		{
-			if (s[stringCount] == r1[rotation])
+			if (r1[rotation] == s[stringCount])
 			{
 				s[stringCount] = r2[rotation];
+				break;
 			}
-			rotation++;
 		}
-		stringCount++;
 	}
 	return (s);
 }
