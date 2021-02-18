@@ -18,17 +18,6 @@ int _strcmp(char *s1, char *s2)
 		counter++;
 	}
 
-	if (s1[counter] > s2[counter])
-	{
-		cmpVal = 15;
-	}	
-	else if (s1[counter] < s2[counter])
-	{
-		cmpVal = -15;
-	}
-	else 
-	{
-		cmpVal = 0;
-	}
+	cmpVal = s1[counter] - s2[counter];
 	return (cmpVal);
 }
