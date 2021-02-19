@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ *main - update value in a[2].
+ *
+ *Return: 0.
+ *
+ */
 int main(void)
 {
 	int n;
