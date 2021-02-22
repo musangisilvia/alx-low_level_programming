@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdlib.h>
 /**
   *_strchr - locates a character in a string.
   *@s: pointer to string.
@@ -10,10 +9,9 @@
   */
 char *_strchr(char *s, char c)
 {
-	char *p; /* pointer to first occurence*/
+	char *p; /* pointer to char*/
 	int counter;
 
-	p = NULL;
 	for (counter = 0; s[counter] != '\0'; counter++)
 	{
 		if (s[counter] == c)
@@ -21,6 +19,10 @@ char *_strchr(char *s, char c)
 			p = &s[counter];
 			break;
 		}
+	}
+	if (s[counter] == c)
+	{
+		p = &s[counter];
 	}
 	return (p);
 }
