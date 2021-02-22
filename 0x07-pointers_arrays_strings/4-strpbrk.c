@@ -18,7 +18,6 @@ char *_strpbrk(char *s, char *accept)
 	p = 0;
 
 	for (counter = 0; s[counter] != '\0'; counter++)
-		p = &needle[i];
 	{
 		for (counter2 = 0; accept[counter2]; counter2++)
 		{
