@@ -31,3 +31,7 @@
 
 ## 0x06-pointers_arrays_strings
 - More pointers arrays an strings.
+
+## 0x07-pointers_arrays_strings
+- Even more pointers, arrays and strings.
+
