@@ -13,16 +13,13 @@ char *_strchr(char *s, char c)
 	char *p; /* pointer to first occurence*/
 	int counter;
 
+	p = NULL;
 	for (counter = 0; s[counter] != '\0'; counter++)
 	{
 		if (s[counter] == c)
 		{
 			p = &s[counter];
 			break;
-		}
-		else
-		{
-			p = NULL;
 		}
 	}
 	return (p);
