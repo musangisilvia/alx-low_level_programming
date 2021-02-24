@@ -7,14 +7,13 @@
  */
 int _strlen_recursion(char *s)
 {
-	if (*s != '\0')
+	if (*s)
 		return (1 + _strlen_recursion(s + 1));
-	else
-		return(0);
+	return (0);
 }
 
 /**
-  *helperFunction - returns 0 or 1.
+  *helperFunction - check if palindrome.
   *@s: pointer to string.
   *@fi: first index.
   *@li: lastIndex.
@@ -29,6 +28,7 @@ int helperFunction(char *s, int fi, int li)
 		return (0);
 	return (1);
 }
+
 /**
   *is_palindrome - checks if string is palindrome or not.
   *@s: pointer to string.
@@ -41,6 +41,9 @@ int is_palindrome(char *s)
 
 	fi = 0;
 	li = _strlen_recursion(s) - 1;
+
+	if (_strlen_recursion(s) == 0)
+		return (1);
 
 	return (helperFunction(s, fi, li));
 }
