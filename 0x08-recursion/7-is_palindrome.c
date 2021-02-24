@@ -24,6 +24,10 @@ int _strlen_recursion(char *s)
   */
 int helperFunction(char *s, int fi, int li)
 {
+	if (fi >= li)
+	{
+		return (1);
+	}
 	if (fi < li && s[fi] == s[li])
 	{
 		helperFunction(s, fi + 1, li - 1);
