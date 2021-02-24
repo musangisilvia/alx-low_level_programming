@@ -35,3 +35,7 @@
 ## 0x07-pointers_arrays_strings
 - Even more pointers, arrays and strings.
 
+## 0x08-recursion
+- Recursion is where the solution to a problem depends on solutions to smaller instances of the same problem.
+- Working with recursive functions.
+
