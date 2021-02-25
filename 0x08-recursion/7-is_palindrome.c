@@ -26,7 +26,7 @@ int helperFunction(char *s, int fi, int li)
 {
 	if (fi < li && s[fi] == s[li])
 	{
-		helperFunction(s, fi + 1, li - 1);
+		return (helperFunction(s, fi + 1, li - 1));
 	}
 	if (s[fi] != s[li])
 	{
