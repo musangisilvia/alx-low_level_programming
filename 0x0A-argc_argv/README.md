@@ -1,5 +1,5 @@
 # 0x0A-argc_argv
-: The argument count and argument vector.
+The argument count and argument vector.
 
 ## 0-whatsmyname.c
 > A program that prints its name followed by a new line.
@@ -21,6 +21,6 @@
 > A program that adds positive numbers and prints the result followed by a new line.
 > - If no number is passed to the program, ``` 0 ``` is printed follwed by a new line.
 > - if one number contains symbols that are not digits, ``` Error ``` is printed followed by a new line and return ``` 1 ```.
-> Assumes numbers and their sum can be stored in an integer.
+> - Assumes numbers and their sum can be stored in an integer.
 
 
