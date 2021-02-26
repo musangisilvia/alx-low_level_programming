@@ -41,3 +41,9 @@
 
 ## 0x09-static_libraries
 - Creating and using Static Libraries in C.
+
+## 0x0A-argc_argv
+- argc is Argument count.
+- argv is Argument vector.
+- passing argc and argv to main.
+
