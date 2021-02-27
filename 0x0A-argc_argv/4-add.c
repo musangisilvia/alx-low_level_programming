@@ -12,7 +12,7 @@
   */
 int main(int argc, char *argv[])
 {
-	int count, sum, num;
+	int count, count2, sum;
 
 	sum = 0;
 
@@ -24,18 +24,17 @@ int main(int argc, char *argv[])
 	{
 		for (count = 1; count < argc; count++)
 		{
-			num = atoi(argv[count]);
-
-			if (num >= 0)
+			for (count2 = 0; argv[count][count2] != '\0'; count2++)
 			{
-				sum += num;
+				if (argv[count][count2] >= '0' && argv[count][count2] <= '9')
+					break;
+				else
+					printf("Error\n");
+					return (1);
 			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			sum += atoi(argv[count]);
 		}
+
 		printf("%d\n", sum);
 	}
 
