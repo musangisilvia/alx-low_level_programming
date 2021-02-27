@@ -20,23 +20,18 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	else
+	for (count = 1; count < argc; count++)
 	{
-		for (count = 1; count < argc; count++)
+		for (count2 = 0; argv[count][count2] != '\0'; count2++)
 		{
-			for (count2 = 0; argv[count][count2] != '\0'; count2++)
+			if (argv[count][count2] < '0' || argv[count][count2] > '9')
 			{
-				if (argv[count][count2] >= '0' && argv[count][count2] <= '9')
-					break;
-				else
-					printf("Error\n");
-					return (1);
+				printf("Error\n");
+				return (1);
 			}
-			sum += atoi(argv[count]);
 		}
-
-		printf("%d\n", sum);
+		sum += atoi(argv[count]);
 	}
-
+	printf("%d\n", sum);
 	return (0);
 }
