@@ -23,4 +23,11 @@ The argument count and argument vector.
 > - if one number contains symbols that are not digits, ``` Error ``` is printed followed by a new line and return ``` 1 ```.
 > - Assumes numbers and their sum can be stored in an integer.
 
-
+## 100-change.c
+>  A program that prints the minimum number of coins to make change for an amount of money.
+> - Usage: ``` ./change cents ```.
+> - ``` cents ``` is the amount of cents you need to give back.
+> - If number of arguments passed to program is not exactly ``` 1 ```, the program prints ``` Error ``` followed by a new line and returns ``` 1 ```.
+> ``` atoi ``` is used to parse the parameter parsed to the program.
+> - If number passed as argument is negative, the program prints ``` 0 ```, followed by a new line.
+> - Coin values are: ``` 25, 10, 5, 2, 1 ``` cents
