@@ -1,39 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
-/**
-  *minCoins - finds minimum coins to make a given change.
-  *@amount: amount given.
-  *@coinrange: array of coins.
-  *@m: sizeof coinrange / coinrange[0].
-  *
-  *Return: number of coins.
-  */
-int minCoins(int amount, int coinrange[], int m)
-{
-	int i, change = INT_MAX, sub_change;
-
-	/* base case */
-	if (amount == 0)
-	{
-		return (0);
-	}
-	/* try every coin smaller than amount*/
-	for (i = 0; i < m; i++)
-	{
-		if (coinrange[i] <= amount)
-		{
-			sub_change = minCoins(amount - coinrange[i], coinrange, m);
-			/*check for INT_MAX to avoid overflow and see if the change can*/
-			 /*be minimized*/
-			if ((sub_change != INT_MAX) && (sub_change + 1 < change))
-			{
-				change = sub_change + 1;
-			}
-		}
-	}
-	return (change);
-}
 /**
   *main - prints minimum number of coins to make change for an amount of money.
   *@argc: number of argumenta passed.
@@ -43,32 +9,41 @@ int minCoins(int amount, int coinrange[], int m)
   */
 int main(int argc, char *argv[])
 {
-	int amount, coins[5], m;
+	int change, num;
 
+	change = 0;
 	if (argc == 2)
 	{
-		if (atoi(argv[1]) < 0)
+		num = atoi(argv[1]);
+		if (num > 0)
 		{
-			printf("0\n");
-			return (0);
+			for (; num >= 25; change++)
+			{
+				num = num - 25;
+			}
+			for (; num >= 10; change++)
+			{
+				num = num - 10;
+			}
+			for (; num >= 5; change++)
+			{
+				num = num - 5;
+			}
+			for (; num >= 2; change++)
+			{
+				num = num - 2;
+			}
+			for (; num >= 1; change++)
+			{
+				num = num - 1;
+			}
 		}
-
-		amount = atoi(argv[1]);
-		coins[0] = 25;
-		coins[1] = 10;
-		coins[2] = 5;
-		coins[3] = 2;
-		coins[4] = 1;
-		m = sizeof(coins) / sizeof(coins[0]);
-
-		printf("%d\n", minCoins(amount, coins, m));
+		printf("%d\n", change);
+		return (0);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	return (0);
 }
-
