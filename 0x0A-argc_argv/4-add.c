@@ -16,9 +16,10 @@ int main(int argc, char *argv[])
 
 	sum = 0;
 
-	if (argc == 1)
+	if (argc < 2)
 	{
 		printf("0\n");
+		return (0);
 	}
 	for (count = 1; count < argc; count++)
 	{
