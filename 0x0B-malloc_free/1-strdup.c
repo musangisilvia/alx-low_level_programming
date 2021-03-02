@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	nstr = malloc(len + 1);
 	p = nstr;
 	for (i = 0; i < len; i++)
-        {
+	{
 		*p++ = *str++;
 	}
 	*p = '\0';
