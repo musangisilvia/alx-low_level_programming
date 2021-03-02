@@ -12,8 +12,8 @@
   */
 char *_strdup(char *str)
 {
-	char *nstr, *p;
-	int len, i;
+	char *nstr;
+	unsigned int len, i;
 
 	/* check is str is null */
 	if (!*str)
@@ -35,12 +35,11 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	p = nstr;
 	for (i = 0; i < len; i++)
 	{
-		*p++ = *str++;
+		nstr[i] = str[i];
 	}
-	*p = '\0';
+	nstr[i] = '\0';
 
 	return (nstr);
 
