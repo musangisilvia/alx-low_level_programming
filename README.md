@@ -47,3 +47,9 @@
 - argv is Argument vector.
 - passing argc and argv to main.
 
+## 0x0B-malloc_free
+- ``` malloc ``` function allocates a specific number of bytes in memory and returns a pointer to the allocated memory.
+- ``` free ``` function frees up memory allocated.
+> This project entails some ways in whihc malloc and free can be used in C.
+
+
