@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
-  *_strdup - retrurns a pointer to a newly alloctaed
+  *_strdup - returns a pointer to a newly alloctaed
   *space in memory which contains a copy of the string
   *passed.
   *@str: pointer to string being duplicated.
@@ -27,7 +27,7 @@ char *_strdup(char *str)
 		len++;
 	}
 
-	nstr = malloc((sizeof(char) * len) + 1);
+	nstr = malloc(sizeof(char) * (len + 1));
 
 	/*check if malloc was successful*/
 	if (nstr == NULL)
@@ -39,7 +39,7 @@ char *_strdup(char *str)
 	{
 		nstr[i] = str[i];
 	}
-	nstr[i + 1] = '\0';
+	nstr[i] = '\0';
 
 	return (nstr);
 
