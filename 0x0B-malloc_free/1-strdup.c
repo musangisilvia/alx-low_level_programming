@@ -27,18 +27,21 @@ char *_strdup(char *str)
 		len++;
 	}
 
-	nstr = malloc(len + 1);
+	nstr = malloc((sizeof(char) * len) + 1);
+
+	/*check if malloc was successful*/
+	if (nstr == NULL)
+	{
+		return (NULL);
+	}
+
 	p = nstr;
 	for (i = 0; i < len; i++)
 	{
 		*p++ = *str++;
 	}
 	*p = '\0';
-	return (nstr);
 
-	if (nstr == 0)
-	{
-		return (NULL);
-	}
+	return (nstr);
 
 }
