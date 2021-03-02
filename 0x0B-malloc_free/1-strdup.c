@@ -27,19 +27,16 @@ char *_strdup(char *str)
 		len++;
 	}
 
-	if (malloc(len + 1))
-	{
-		nstr = malloc(len + 1);
-		p = nstr;
-		for (i = 0; i < len; i++)
-	        {
-			*p++ = *str++;
-		}
-		*p = '\0';
-		return (nstr);
-
+	nstr = malloc(len + 1);
+	p = nstr;
+	for (i = 0; i < len; i++)
+        {
+		*p++ = *str++;
 	}
-	else
+	*p = '\0';
+	return (nstr);
+
+	if (nstr == 0)
 	{
 		return (NULL);
 	}
