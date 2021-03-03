@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	unsigned int len, i;
 
 	/* check is str is null */
-	if (!*str)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -39,7 +39,7 @@ char *_strdup(char *str)
 	{
 		nstr[i] = str[i];
 	}
-
+	nstr[len] = '\0';
 	return (nstr);
 
 }
