@@ -89,9 +89,10 @@ char **strtow(char *str)
 			while (*(str + j) != 32 && *(str + j) != '\0')
 			{
 				length++;
+				printf("Length is %d\n", length);
 				j++;
 			}
-			*(s + idx) = (char *)malloc(sizeof(char) * (length + 1));
+			*(s + idx) = (char *)malloc(sizeof(char) * (length + 2));
 			if (*(s + idx) == 0)
 			{
 				for (k = 0; k < idx; k++)
@@ -100,7 +101,7 @@ char **strtow(char *str)
 				return (0);
 			}
 			idx++;
-			i = j - 1;
+			i = j;
 		}
 		i++;
 	}
