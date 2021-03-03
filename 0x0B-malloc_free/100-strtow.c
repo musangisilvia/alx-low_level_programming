@@ -21,7 +21,7 @@ int wordnos(char *str)
 			while (*(str + j) != 32 && *(str + j) != '\0')
 				j++;
 			wordno++;
-			i = j;
+			i = j - 1;
 		}
 		i++;
 	}
@@ -75,8 +75,9 @@ char **strtow(char *str)
 	if (str == NULL || *str == '\0')
 		return (0);
 	wordno = wordnos(str);
-	s = (char **)malloc(sizeof(char *) * (wordno + 1));
+	s = (char **)malloc(sizeof(char *) * (wordno + 2));
 	if (s == 0)
+		free(s);
 		return (0);
 	idx = 0;
 	i = 0;
