@@ -60,6 +60,8 @@ char **strtow(char *str)
 	if (str == NULL || *str == '\0')
 		return (0);
 	wordno = wordnos(str);
+	if (wordno == 0)
+		return (0);
 	s = (char **)malloc(sizeof(char *) * (wordno + 1));
 	if (s == 0)
 	{
