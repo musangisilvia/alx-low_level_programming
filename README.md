@@ -52,4 +52,6 @@
 - ``` free ``` function frees up memory allocated.
 > This project entails some ways in whihc malloc and free can be used in C.
 
+## 0x0C-more_malloc_free
+> This project entails more ways in which malloc can be used.
 
