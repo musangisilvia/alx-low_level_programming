@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include <strings.h>
+#include <string.h>
 /**
   * _calloc - allocates memory of an array using malloc.
   * @nmemb: number of elements in array.
