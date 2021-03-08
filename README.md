@@ -55,3 +55,7 @@
 ## 0x0C-more_malloc_free
 > This project entails more ways in which malloc can be used.
 
+## 0x0D-preprocessor
+> Thr preprocessor removes comments and includes header files in source code before compilation begins. It also replaces macro names with code.
+> This project will inlcude some of the ways in which macros are effective in C.
+
