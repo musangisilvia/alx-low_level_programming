@@ -2,7 +2,7 @@
 #define DOG_H
 
 struct dog {
-	char *name;
+	char *name; 
 	char *owner;
 	float age;
 };
