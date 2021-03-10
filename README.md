@@ -59,3 +59,12 @@
 > Thr preprocessor removes comments and includes header files in source code before compilation begins. It also replaces macro names with code.
 > This project will inlcude some of the ways in which macros are effective in C.
 
+## 0x0E-structures_typedef
+> Structures in C are user defined datatypes that can hold elements of different datatypes.
+> Typedef is used to declare elements of a cetain datatype from an existing datatype. 
+> - This project outlines the different uses of structures and typedef.
+
+## 0x0F-function_pointers
+> Like normal pointers, there exists pointers that point to code rather than data these are function pointers.
+> - This project shows some of the ways we can use function pointers.
+
