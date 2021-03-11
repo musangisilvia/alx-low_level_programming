@@ -68,3 +68,7 @@
 > Like normal pointers, there exists pointers that point to code rather than data these are function pointers.
 > - This project shows some of the ways we can use function pointers.
 
+## 0x10-variadic_functions
+> A variadic function is a function that takes a  variable number of arguments whenever its called.
+> - This project outlines different ways in which variadic functions can be used.
+
