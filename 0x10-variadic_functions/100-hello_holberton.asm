@@ -2,7 +2,7 @@
 ; writes Hello, Holberton to the console using system calls. Runs on 64-bit Linux
 ; To assemble and run:
 ;
-;      nasm -felf64 100-hello_holberon.asm && ld hello.o && ./a.out
+;      nasm -f elf64 100-hello_holberton.asm && gcc 100-hello_holberton.o -o hello
 ; -----------------------------------------------------------------------------------
 
 section .text
