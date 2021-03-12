@@ -5,10 +5,14 @@
 ;      nasm -felf64 100-hello_holberon.asm && ld hello.o && ./a.out
 ; -----------------------------------------------------------------------------------
 
-global _start
+section .text
+global main
 
-	section .text
-_start: mov	rax, 1
+main:
+	push	rbp
+	mov	rbp, rsp
+	sub	rsp, 32
+	mov	rax, 1
 	mov	rdi, 1
 	mov 	rsi, message
 	mov	rdx, 17
