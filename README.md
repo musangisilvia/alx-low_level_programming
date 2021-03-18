@@ -72,3 +72,7 @@
 > A variadic function is a function that takes a  variable number of arguments whenever its called.
 > - This project outlines different ways in which variadic functions can be used.
 
+## 0x12-singly_linked_lists
+> A linked list is a naturally recursive data structure.
+> - This project outlines some of the ways in which linked lists can be used.
+
