@@ -35,6 +35,12 @@ data (n).
 > - Prototype: ``` int pop_listint(listint_t **head); ```.
 > - If the linked list is empty, ``` 0 ``` is returned.
 
+## 7-get_nodeint.c
+> A function that returns the nth node of a listint_t.
+> - Prorotype: ``` listint_t *get_nodeint_at_index(listint_t *head, unsigned int index); ```.
+> - ``` index ``` is the index of the node starting at ``` 0 ```.
+> - Returns *NULL* if node does not exist.
+
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
