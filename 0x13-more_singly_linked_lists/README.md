@@ -24,6 +24,11 @@
 > A function that frees a ``` listint_t ``` list.
 > - Prototype: ``` void free_listint(listint_t *head); ```.
 
+## 5-free_listint2.c
+> A function that frees a ``` listint_t ``` list.
+> - Prototype: ``` void free_listint2(listint_t **head); ```.
+> - ``` head ``` is set to ``` NULL ```.
+
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
