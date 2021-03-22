@@ -46,6 +46,14 @@ data (n).
 > - Protoype: ``` int sum_listint(listint_t *head); ```.
 > - If list is empty, ``` 0 ``` is returned.
 
+## 9-insert_nodeint.c
+> A function that inserts a new node at a given position.
+> - Prototype: ``` listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n); ```.
+> - ``` idx ``` is the index of the list where the new node should be added. Index starts at 0
+> - The function returns the address of the new node or ``` NULL ``` if it failed.
+> - If new node cannot be added at ``` idx ```, it is not added, function returns *NULL*.
+
+
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
