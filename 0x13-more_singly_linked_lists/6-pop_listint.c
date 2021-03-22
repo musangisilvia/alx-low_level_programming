@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	if (*head == NULL && head == NULL)
 		return (removed);
 
-	if ((*head)->next != NULL)
+	if ((*head)->next != NULL || (*head)->next == NULL)
 	{
 		temp = *head;
 		removed = temp->n;
