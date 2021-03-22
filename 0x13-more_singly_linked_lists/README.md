@@ -29,6 +29,12 @@
 > - Prototype: ``` void free_listint2(listint_t **head); ```.
 > - ``` head ``` is set to ``` NULL ```.
 
+## 6-pop_listint.c
+>A function that deletes the head node of a listint_t linked list and returns the head node's
+data (n).
+> - Prototype: ``` int pop_listint(listint_t **head); ```.
+> - If the linked list is empty, ``` 0 ``` is returned.
+
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
