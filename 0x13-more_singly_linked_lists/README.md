@@ -41,6 +41,11 @@ data (n).
 > - ``` index ``` is the index of the node starting at ``` 0 ```.
 > - Returns *NULL* if node does not exist.
 
+## 8-sum_listint.c
+> A function that returns the sum of all the data (n) of a ``` listint_t ``` linked list.
+> - Protoype: ``` int sum_listint(listint_t *head); ```.
+> - If list is empty, ``` 0 ``` is returned.
+
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
