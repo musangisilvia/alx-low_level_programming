@@ -64,6 +64,12 @@ data (n).
 > - Prototype: ``` listint_t *reverse_listint(listint_t **head); ```.
 > - Returns a pointer to the first node of te reversed list.
 
+## 101-print_listint_safe.c
+> A function that prints a ``` listint_t ``` linked list.
+> - Prototype: ``` size_t print_listint_safe(const listint_t *head); ```.
+> - Returns the number of nodes in the list.
+> - If the function fails, it exits the program with status ``` 98 ```.
+
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
