@@ -11,16 +11,17 @@ int pop_listint(listint_t **head)
 	listint_t *temp;
 	int removed = 0;
 
-	if (*head == NULL && head == NULL)
+	if (*head == NULL)
 		return (removed);
 
-	if ((*head)->next != NULL || (*head)->next == NULL)
-	{
-		temp = *head;
-		removed = temp->n;
-		/*make head point to the next element*/
-		*head = (*head)->next;
-		free(temp);
-	}
+	if (*head == NULL)
+		return (removed);
+
+	temp = *head;
+	removed = temp->n;
+	/*make head point to the next element*/
+	*head = (*head)->next;
+	free(temp);
+
 	return (removed);
 }
