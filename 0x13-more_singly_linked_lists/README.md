@@ -59,7 +59,6 @@ data (n).
 > - ``` index ``` is the index of the node that should be dleted. Index starts at 0.
 > - Returns ``` 1 ``` if succesful, ``` -1 ``` if it fails.
 
-
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
