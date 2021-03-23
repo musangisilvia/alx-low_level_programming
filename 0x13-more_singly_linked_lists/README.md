@@ -59,6 +59,11 @@ data (n).
 > - ``` index ``` is the index of the node that should be dleted. Index starts at 0.
 > - Returns ``` 1 ``` if succesful, ``` -1 ``` if it fails.
 
+## 100-reverse_listint.c
+> A function that reverses a ``` listint_t ``` linked list.
+> - Prototype: ``` listint_t *reverse_listint(listint_t **head); ```.
+> - Returns a pointer to the first node of te reversed list.
+
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
