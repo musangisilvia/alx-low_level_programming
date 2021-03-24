@@ -70,6 +70,11 @@ data (n).
 > - Returns the number of nodes in the list.
 > - If the function fails, it exits the program with status ``` 98 ```.
 
+## 103-find_loop.c
+> A function that finds the loop in a linked list.
+> - Prototype: ``` listint_t *find_listint_loop(listint_t *head); ```.
+> - Returns the address of the node where the loop starts or ``` NULL ``` if there is no loop.
+
 ## lists.h
 > Header file contains function prototypes of all functions written in this project.
 
