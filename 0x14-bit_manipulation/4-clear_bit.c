@@ -28,7 +28,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	{
 		*n -= getp(2, index);
 	}
-	if (index > 63)
+	if (!n)
 	{
 		return (-1);
 	}
