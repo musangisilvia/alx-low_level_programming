@@ -25,10 +25,8 @@ unsigned int _strlen(const char *s)
   *Return: x to the pow of y.
   *0 if x < 0.
   */
-unsigned int getp(int x, int y)
+int getp(int x, int y)
 {
-	unsigned int num;
-
 	if (y < 0)
 		return (0);
 	if (y == 0)
@@ -36,8 +34,7 @@ unsigned int getp(int x, int y)
 	if (y == 1)
 		return (x);
 
-	num = x * getp(x, y - 1);
-	return (num);
+	return (x * getp(x, y - 1));
 }
 
 /**
