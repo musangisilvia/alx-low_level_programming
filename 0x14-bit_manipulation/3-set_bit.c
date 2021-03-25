@@ -24,7 +24,7 @@ int getp(int x, int y)
   */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (n)
+	if (n && index < 64)
 	{
 		*n += getp(2, index);
 	}
