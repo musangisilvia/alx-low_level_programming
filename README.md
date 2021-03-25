@@ -79,3 +79,8 @@
 ## 0x13-more_singly_linked_lists
 > - This project contains more ways of using linked lists.
 
+## 0x14-bit_manipulation
+> Bit manipulation is the act of algorithmically manipulating bits or other pieces of data
+shorter than a byte. 
+> - C language is very efficient in manpulating bits.
+> - This project shows different ways of manipulating bits in C.
