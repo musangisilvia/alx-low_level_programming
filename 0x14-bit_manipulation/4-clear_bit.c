@@ -8,6 +8,8 @@
   */
 int getp(int x, int y)
 {
+	if (y < 0)
+		return (-1);
 	if (y == 0)
 		return (1);
 	if (y == 1)
@@ -24,7 +26,9 @@ int getp(int x, int y)
   */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	if (n && index < 64)
+	if (index > 63)
+		return (-1);
+	if (n)
 	{
 		*n -= getp(2, index);
 		return (1);
