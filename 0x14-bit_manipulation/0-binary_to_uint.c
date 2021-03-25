@@ -52,7 +52,7 @@ unsigned int binary_to_uint(const char *b)
 	int power;
 
 	length = _strlen(b);
-	if (length == 0)
+	if (length == 0 || b == NULL)
 		return (0);
 
 	power = 0;
