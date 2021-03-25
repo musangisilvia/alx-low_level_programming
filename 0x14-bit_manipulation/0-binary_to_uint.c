@@ -52,25 +52,27 @@ unsigned int binary_to_uint(const char *b)
 	int power;
 
 	length = _strlen(b);
-	if (length == 0 || b == NULL)
-		return (0);
-
 	power = 0;
 	num = 0;
 	index = length - 1;
-	while (length > 0)
+
+	if (length && b)
 	{
-		if (b[index] == 48 || b[index] == 49)
+		while (length && b)
 		{
-			num = num + ((b[index] - 48) * getp(2, power));
-			power++;
-			index--;
-			length--;
+			if (b[index] == 48 || b[index] == 49)
+			{
+				num = num + ((b[index] - 48) * getp(2, power));
+				power++;
+				index--;
+				length--;
+			}
+			else
+			{
+				return (0);
+			}
 		}
-		else
-		{
-			return (0);
-		}
+		return (num);
 	}
-	return (num);
+	return (0);
 }
