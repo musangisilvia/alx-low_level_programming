@@ -13,6 +13,12 @@
 > - Prototype: ``` void print_binary(unsigned long int n); ```.
 > - Using Bitwise AND.
 
+## 2-get_bit.c
+> A function that returns the value of a bit at a given index.
+> - Prototype: ``` int get_bit(unsigned long int n, unsigned int index); ```.
+> - ``` index ``` is the index starting from ``` 0 ``` of the bit you want to get.
+> - Returns the value of the bit at ``` index ``` or ``` -1 ``` if an error occured.
+
 ## holberton.h
 > Header file contains all function prototypes of functions in this project.
 
