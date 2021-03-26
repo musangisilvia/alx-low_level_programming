@@ -31,6 +31,19 @@
 > - ``` index ``` is the index starting from ``` 0 ``` of the bit you want to set.
 > - Returns ``` 1 ``` if it worked and ``` -1 ``` if an error occured.
 
+## 5-flip_bits.c
+> A function that returns the number of bits you would need to flip to get from one number to
+another.
+> - Prototype: ``` unsigned int flip_bits(unsigned long int n, unsigned long int m); ```.
+
+## 100-get_endianess.c
+> A function that checks the endianness.
+> - Prototype: ``` int get_endianness(void); ```.
+> - Returns ``` 0 ``` if big endian, ``` 1 ``` if little endian.
+
+## 101-password
+> A file that contains the password for the [crackme3](https://github.com/holbertonschool/0x13.c) program.
+
 ## holberton.h
 > Header file contains all function prototypes of functions in this project.
 
