@@ -48,28 +48,26 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int num, length, index;
 	int power;
 
+	if (!b)
+		return (0);
+
 	length = _strlen(b);
 	power = 0;
 	num = 0;
 	index = length - 1;
-
-	if (length && b)
+	while (length > 0)
 	{
-		while (length && b)
+		if (b[index] == 48 || b[index] == 49)
 		{
-			if (b[index] == 48 || b[index] == 49)
-			{
-				num = num + ((b[index] - 48) * getp(2, power));
-				power++;
-				index--;
-				length--;
-			}
-			else
-			{
-				return (0);
-			}
+			num = num + ((b[index] - 48) * getp(2, power));
+			power++;
+			index--;
+			length--;
 		}
-		return (num);
+		else
+		{
+			return (0);
+		}
 	}
-	return (0);
+	return (num);
 }
