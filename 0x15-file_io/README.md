@@ -21,6 +21,17 @@ terminated string to write to the file.
 > - If ``` filename ``` is ``` NULL ``` the function returns ``` -1 ```.
 > - If ``` text_content ``` is ``` NULL ``` the function creates an empty file.
 
+## 2-append_text_to_file.c
+> A function that appends text at the end of a file.
+> - Prototype: ``` int append_text_to_file(const char *filename, char *text_content); ```.
+> -  ``` filename ``` is te name of the file to create and ``` text_content ``` is a ``` NULL ```
+terminated string to write to the file.
+> - Return: ``` 1 ``` on success, ``` -1 ``` on failure.
+> - File is not created if it does not exist.
+> - If ``` filename ``` is ``` NULL ``` the function returns ``` -1 ```.
+> - If ``` text_content ``` is ``` NULL ``` nothin is written to the file.
+> - Returns ``` 1 ``` if the file exists and ``` -1 ``` if the file does not exists or required permissions are not granted.
+
 ## holberton.h
 > A header file that contains function prototypes of functions written in this project.
 
