@@ -15,7 +15,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	file = open(filename, O_WRONLY | O_EXCL | O_APPEND);
 	if (file < 0)
 		return (-1);
-	
+
 	if (text_content)
 	{
 		i = 0;
