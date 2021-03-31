@@ -36,12 +36,12 @@ int main(int argc, char *argv[])
 	}
 	close(file1);
 	close(file2);
-	if (!(close(file1)))
+	if (close(file1) != 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file1);
 		exit(100);
 	}
-	if (!(close(file2)))
+	if (close(file2) != 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file2);
 		exit(100);
