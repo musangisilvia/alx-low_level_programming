@@ -32,6 +32,20 @@ terminated string to write to the file.
 > - If ``` text_content ``` is ``` NULL ``` nothin is written to the file.
 > - Returns ``` 1 ``` if the file exists and ``` -1 ``` if the file does not exists or required permissions are not granted.
 
+## 3-cp.c
+> A program that copies the content of a file to another file.
+> - Usage: cp file_from file_to
+> - if the number of argument is not the correct one, the function exit with code 97 and prints ``` Usage: cp file_from file_to ```, followed by a new line, on the ``` POSIX ``` standard error.
+> - If ``` file_to ``` exists, it is truncated.
+> - If ``` file_from ``` does not exist or cannot be read from, the program will exit with a code of ``` 98 ``` and print ``` Error: Can't read from file NAME_OF_THE_FILE ```, followed by a new line on the ``` POSIX ``` standard error.
+> - * where ``` NAME_OF_THE_FILE ``` is the first argument passed to the program (argv[1]).
+> - If ``` file_to ``` cannot be created or written to, the program exists with a code of ``` 99 ``` and prints ``` Error: Can't write to NAME_OF_THE_FILE ```, followed by a new line, on the  ``` POSIX ``` standard error.
+> - * where ```  NAME_OF_THE_FILE ``` is the seconf argument passed to the program (argv[2]);
+> - If a file descriptor cannot be closed, the program exits with a code of ``` 100 ``` and prints ``` Error: Can't close fd FD_VALUE ``` , followed by a new line, on the  ``` POSIX ``` standard error.
+> - * where ``` FD_VALUE ``` is the value of the file descriptor.
+> - Permissions of the created file are: ``` rw-rw-r-- ```. If the file already exists, the permissions are not changed.
+> - ``` 1024 ``` bytes are read at a time from the ``` file_from ``` to make less system calls. A buffer is used.
+
 ## holberton.h
 > A header file that contains function prototypes of functions written in this project.
 
