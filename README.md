@@ -88,4 +88,8 @@ shorter than a byte.
 ## 0x15-file_io
 > Dealing with system calls provided by the kernel.
 
+## 0x17-doubly_linked_lists
+
+> Doubly linked list si different from the singly linked list such that each node has an extra pointer to the previous node.
+- In this project, different operatiosn on the doubly linked list are demonstrated.
 
