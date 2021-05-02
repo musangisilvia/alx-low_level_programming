@@ -16,10 +16,14 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 /* if *head ->next is null, only one node in list*/
 	if ((*head)->next == NULL)
 	{
-		temp = *head;
-		*head = NULL;
-		free(temp);
-		return (1);
+		if (index == 0)
+		{
+			temp = *head;
+			*head = NULL;
+			free(temp);
+			return (1);
+		}
+		return (0);
 	}
 /* traverse the list checking for index given */
 	temp = *head;
@@ -30,14 +34,17 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(temp);
 		return (1);
 	}
-	while (index != 0 && temp)
+	else
 	{
-		temp = temp->next;
-		index--;
+		while (index != 0 && temp)
+		{
+			temp = temp->next;
+			index--;
+		}
+		temp2 = temp->prev;
+		temp2->next = temp->next;
+		temp->next->prev = temp2;
+		free(temp);
+		return (1);
 	}
-	temp2 = temp->prev;
-	temp2->next = temp->next;
-	temp->next->prev = temp2;
-	free(temp);
-	return (1);
 }
