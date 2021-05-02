@@ -9,41 +9,42 @@
   */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *temp, *temp2;
- /* if *head is null, nothing to free */
+	dlistint_t *temp, *temp2, *tp;
+
 	if (*head == NULL)
 		return (0);
-/* traverse the list checking for index given */
 	temp = *head;
-	if (index == 0)
+	if (index == 0 && (*head)->next == NULL)
 	{
-		if ((*head)->next == NULL)
-		{
-			temp = *head;
-			*head = NULL;
-			free(temp);
-			return (1);
-		}
-		*head = (*head)->next;
-		temp->next->prev = NULL;
-		free(temp);
+		free(temp), *head = NULL;
 		return (1);
 	}
-	else
+	if (index ==  0 && (*head)->next != NULL)
 	{
-		if (temp->next !=  NULL)
+		*head = (*head)->next;
+		(*head)->prev = NULL;
+	}
+	if (index > 0)
+	{
+		while (index != 0)
+			temp = temp->next, index--;
+		if (temp->next == NULL)
 		{
-			while (index != 0 && temp)
-			{
-				temp = temp->next;
-				index--;
-			}
+			tp = *head;
+			while (tp->next != NULL)
+				tp = tp->next;
+			temp2 = tp->prev;
+			temp2->next = NULL, free(tp);
+			return (1);
+		}
+		else
+		{
 			temp2 = temp->prev;
 			temp2->next = temp->next;
 			temp->next->prev = temp2;
-			free(temp);
-			return (1);
 		}
+		return (1);
 	}
-	return (0);
+	free(temp);
+	return (1);
 }
