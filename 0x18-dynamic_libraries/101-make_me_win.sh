@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc *.c -shared -o slib.so
+gcc *.o -shared -o slib.so
 LD_PRELOAD=$PWD/slib.so
