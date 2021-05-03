@@ -93,3 +93,10 @@ shorter than a byte.
 > Doubly linked list si different from the singly linked list such that each node has an extra pointer to the previous node.
 - In this project, different operatiosn on the doubly linked list are demonstrated.
 
+
+## 0x18-dynamic_libraries
+
+> Unlike static libraries, dynamic libraries are not stored in the executable file.
+> They can be utilised by many programs and there is no need to recompile whenever a change is done.
+> This project shows how to create and use a dynamic library.
+
