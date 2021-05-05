@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc *.o -shared -o 4lib.so
-LD_PRELOAD=$PWD/4lib.so
+gcc *.o -shared -o libruin.so
+LD_PRELOAD=$PWD/libruin.so
