@@ -100,3 +100,14 @@ shorter than a byte.
 > They can be utilised by many programs and there is no need to recompile whenever a change is done.
 > This project shows how to create and use a dynamic library.
 
+## 0x19. C - Stacks, Queues - LIFO, FIFO
+
+> A stack is a linear data stsructure in which elements can be inserted and deleted only from one side of the list (i.e *top*). It follows the *LIFO* (Last in First Out) principle.
+> A queue is a linear data structure in which elements can be inserted only from one side of the list called the *rear* and elements can be deleted only from the *front*. It follows the *FIFO* (First In First Out) principle. 
+> These concepts were ijmplemented under the [monty](https://github.com/musangisilvia/monty) project.
+
+## 0x1A. C - Hash tables
+
+> A hash table (or hash map) is a data structure that implements an [associative array](https://en.wikipedia.org/wiki/Associative_array) [abstract data type](https://en.wikipedia.org/wiki/Abstract_data_type), A structure that can map keys to values. 
+> It uses a [hash function](https://en.wikipedia.org/wiki/Hash_function) to compute an *index* (or hash code) into an array of *buckets* or *slots* from which the desired value can be found.
+
