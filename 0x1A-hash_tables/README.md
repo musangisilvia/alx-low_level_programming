@@ -74,7 +74,7 @@ A function that adds an element to the hash table.
 	* ``` value ``` is the value associated with the key. must be duplicated, and can be an empty string.
 - Return: 1 if it succeeded, 0 otherwise.
 - In case of collision, the new node is added at the beginning of the list.
-- Some strings that collide using the djb2 algorithm are:
+- Tip from [Jennie Chu](https://alx-intranet.hbtn.io/rltoken/vsMUPhrSKKWagt2H3XdWMA): Some strings that collide using the djb2 algorithm are:
 	* *hetairas* and *mentioner*
 	* *heliotropes* and *neurospora*
 	* *depravement* and *serafins*
@@ -82,7 +82,7 @@ A function that adds an element to the hash table.
 	* *joyful* and *synaphea*
 	* *redescribed* and *urites*
 	* *dram* and *vivency*
-   ~ Tip from [Jennie Chu](https://alx-intranet.hbtn.io/rltoken/vsMUPhrSKKWagt2H3XdWMA);
+~ Tip from [Jennie Chu](https://alx-intranet.hbtn.io/rltoken/vsMUPhrSKKWagt2H3XdWMA);
 
 ### 4-hash_table_get.c
 
