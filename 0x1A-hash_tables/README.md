@@ -82,7 +82,6 @@ A function that adds an element to the hash table.
 	* *joyful* and *synaphea*
 	* *redescribed* and *urites*
 	* *dram* and *vivency*
-~ Tip from [Jennie Chu](https://alx-intranet.hbtn.io/rltoken/vsMUPhrSKKWagt2H3XdWMA);
 
 ### 4-hash_table_get.c
 
