@@ -23,11 +23,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		temp = temp->next;
 	}
 
-	if (temp == NULL)
-	{
-		if (strcmp(key, temp->key) == 0)
-			return (temp->value);
-	}
-
 	return (NULL);
 }
