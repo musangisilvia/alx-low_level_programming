@@ -111,3 +111,10 @@ shorter than a byte.
 > A hash table (or hash map) is a data structure that implements an [associative array](https://en.wikipedia.org/wiki/Associative_array) [abstract data type](https://en.wikipedia.org/wiki/Abstract_data_type), A structure that can map keys to values. 
 > It uses a [hash function](https://en.wikipedia.org/wiki/Hash_function) to compute an *index* (or hash code) into an array of *buckets* or *slots* from which the desired value can be found.
 
+## 0x1B Sorting Algorithm and Big-O notations
+
+Sorting algorithms are step by step procedures that put elements in a list in a certain order. The most frequently used orders are [numerical order](https://en.wikipedia.org/wiki/Numerical_order) and [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order).
+
+Sorting is important for optimaizing the efficiency of other algorithm is itself is efficient.In addition, it is usefule for [canonicalizing](https://en.wikipedia.org/wiki/Canonicalization) data for producing human readable output.
+
+Big-O notation is a relative representation of the complexity of an algorithm. This means it compares two similar algorithms and reduces the comparison to a single variable.
