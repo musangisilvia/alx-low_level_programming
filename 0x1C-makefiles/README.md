@@ -5,10 +5,10 @@ Files used: [0x1B.c](https://github.com/holbertonschool/0x1B.c)
 ## [0-Makefile](https://github.com/musangisilvia/alx-low_level_programming/blob/master/0x1C-makefiles/0-Makefile)
 
 Requirements of the make file are:
-	- name of the executable: ``` holberton ```
-	- rules: ``` all ```
-		* The ``` all ``` rule builds the executable.
-	- Variables: none
+- name of the executable: ``` holberton ```
+- rules: ``` all ```
+	 The ``` all ``` rule builds the executable.
+- Variables: none
 
 ## [1-Makefile](https://github.com/musangisilvia/alx-low_level_programming/blob/master/0x1C-makefiles/1-Makefile)
 
