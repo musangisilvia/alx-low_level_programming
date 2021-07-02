@@ -11,7 +11,7 @@ all : $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean : 
-	$(RM) *~ holberton
+	$(RM) *~ $(NAME)
 
 oclean :
 	$(RM) $(OBJ)
