@@ -118,3 +118,8 @@ Sorting algorithms are step by step procedures that put elements in a list in a 
 Sorting is important for optimaizing the efficiency of other algorithm is itself is efficient.In addition, it is usefule for [canonicalizing](https://en.wikipedia.org/wiki/Canonicalization) data for producing human readable output.
 
 Big-O notation is a relative representation of the complexity of an algorithm. This means it compares two similar algorithms and reduces the comparison to a single variable.
+
+
+## 0x1C-makefiles
+
+A makefile is a file that defines a set of tasks to be executed. It is a simple way to organize code compilation.
