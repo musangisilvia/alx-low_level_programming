@@ -123,3 +123,8 @@ Big-O notation is a relative representation of the complexity of an algorithm. T
 ## 0x1C-makefiles
 
 A makefile is a file that defines a set of tasks to be executed. It is a simple way to organize code compilation.
+
+## 0x1E-search_algorithms
+A search algorithm is an algorithm which solves a search problem. It works to retrieve information stored within some data structure or calculated in the search space ofa problem domain either
+with discrete or continuous values
+
